@@ -1,0 +1,22 @@
+
+<div class="m-pt "></div>
+{{#each allDestinations }}
+<div class="card mb-3 mx-auto  shadow-lg p-3  bg-white rounded m-card-hover " style="max-width: 800px;">
+  <div class="row ">
+    <div class="col-md-4  ">
+       <a href="/destination/listing/{{this.id}}">
+      <img class="m-destinationListing-img " src="{{this.small_img}}" alt="...">
+      </a>
+    </div>
+
+    <div class="col-md-8">
+      <div class="card-body justify-content-start">
+        <h5 class="card-title text-decoration-underline h2-font h3 text-primary m-txt-hover">{{this.title}}</h5>
+        <p class="card-text  h2-font h5 text-primary m_underlineText">{{this.location}}</p>
+        <p class="card-text  h2-font h5 text-dark mt-4"> CAD {{this.price}}</p>
+                
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
