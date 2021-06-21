@@ -9,13 +9,7 @@ router.post("/login", (req, res) => {
 
 
 router.post("/registration", (req, res) => {
-/////////////////////
 
-//////////////
-///////////////////////////////////
-wwwwwwwwwwwwwwwwwwwwwww/////////
-
-qqqqqq
     let name_err;
     let lastname_err;
     let email_err;
@@ -25,7 +19,7 @@ qqqqqq
     let passLength_err;
     let emailRegMatch_err;
     const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-
+    const passwordRegexp=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
     if (req.body.reg_name == "") {
         name_err = "Please enter a first name";
     }
@@ -48,11 +42,11 @@ qqqqqq
     if (req.body.reg_password !== req.body.reg_repassword) {
         passwordConf_err = "confirmation password does not match";
     }
-    if (req.body.reg_password && req.body.reg_password.length < 6 || req.body.reg_password.length > 12) {
-        passLength_err = "Pssword must be between 6 to 12 characters.";
+    if (req.body.reg_password && passwordRegexp.test(req.body.reg_password) !== true) {
+        passRegMatch_err = "Pssword must be more than 8 chars ";
     }
     if (emailRegexp.test(req.body.reg_email) !== true) {
-        passRegMatch_err = "Email is not valid.";
+        emailRegMatch_err = "Email is not valid.";
     }
     //preserving data
     let name = req.body.reg_name;
@@ -71,7 +65,7 @@ qqqqqq
             password_err,
             repassword_err,
             passwordConf_err,
-            passLength_err,
+            passRegMatch_err,
             emailRegMatch_err,
             name,
             lastname,
