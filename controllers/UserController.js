@@ -13,6 +13,8 @@ router.post("/registration", (req, res) => {
 
 
 ///////////////////////////////////
+wwwwwwwwwwwwwwwwwwwwwww
+
 
     let name_err;
     let lastname_err;
