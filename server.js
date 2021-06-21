@@ -4,7 +4,7 @@ const exphbs  = require('express-handlebars');
 //to extract form submitted data from from our POST request 
 //req.body.nameOfFormControll
 const bodyParser = require('body-parser');
-
+const sgMail = require('@sendgrid/mail')
 
 
 const generalController = require('./controllers/GeneralController');

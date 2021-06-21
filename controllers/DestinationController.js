@@ -33,10 +33,6 @@ router.get("/listing/:id",(req,res)=>{
 })
 
 
-
-
-
-
 router.get("/details", (req,res)=>{
 
 
