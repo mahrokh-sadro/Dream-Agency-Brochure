@@ -4,7 +4,31 @@ const router = express.Router();
 
 
 router.post("/login", (req, res) => {
+    let email_err;
+    let password_err;
 
+    if (req.body.email == "") {
+        email_err = "Please enter your email";
+    }
+
+    if (req.body.password == "") {
+        password_err = "Please enter your password";
+    }
+
+    let email=req.body.email;
+    if (email_err || password_err) {
+        res.render("login", {
+
+            email_err,
+            password_err,
+            email
+        })
+    }
+
+    else {
+
+        res.redirect("/");
+    }
 })
 
 
@@ -16,9 +40,9 @@ router.post("/registration", (req, res) => {
     let password_err;
     let repassword_err;
     let passwordConf_err;
-    let passLength_err;
+    let passRegMatch_err;
     let emailRegMatch_err;
-    const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/gi;
     const passwordRegexp=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
     if (req.body.reg_name == "") {
         name_err = "Please enter a first name";
@@ -39,13 +63,13 @@ router.post("/registration", (req, res) => {
     if (req.body.reg_repassword == "") {
         repassword_err = "Please enter the confirmation password";
     }
-    if (req.body.reg_password !== req.body.reg_repassword) {
+    if (req.body.reg_password && req.body.reg_password !== req.body.reg_repassword) {
         passwordConf_err = "confirmation password does not match";
     }
-    if (req.body.reg_password && passwordRegexp.test(req.body.reg_password) !== true) {
-        passRegMatch_err = "Pssword must be more than 8 chars ";
+    if (req.body.reg_password && (passwordRegexp.test(req.body.reg_password) !== true)) {
+        passRegMatch_err = "at least 8 characters, 1 number and 1 symbol";
     }
-    if (emailRegexp.test(req.body.reg_email) !== true) {
+    if (req.body.reg_email && emailRegexp.test(req.body.reg_email) == false) {
         emailRegMatch_err = "Email is not valid.";
     }
     //preserving data
@@ -92,4 +116,3 @@ router.get("/login", (req, res) => {
 
 
 module.exports = router;
-///////////////////////////////
