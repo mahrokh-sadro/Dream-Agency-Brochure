@@ -12,7 +12,7 @@ router.post("/registration", (req, res) => {
 
 
 
-
+///////////////////////////////////
 
     let name_err;
     let lastname_err;
