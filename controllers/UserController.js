@@ -13,7 +13,7 @@ router.post("/registration", (req, res) => {
 
 
 ///////////////////////////////////
-wwwwwwwwwwwwwwwwwwwwwww
+wwwwwwwwwwwwwwwwwwwwwww/////////
 
 
     let name_err;
