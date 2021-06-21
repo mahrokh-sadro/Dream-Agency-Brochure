@@ -15,7 +15,7 @@ router.post("/registration", (req, res) => {
 ///////////////////////////////////
 wwwwwwwwwwwwwwwwwwwwwww/////////
 
-
+qqqqqq
     let name_err;
     let lastname_err;
     let email_err;
