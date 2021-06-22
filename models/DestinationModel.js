@@ -11,7 +11,7 @@ const DestinationModel={
          rating: 5,       
          type: "Hotels" ,     
          small_img:"../img/1.jpg",
-         large_img:"../img/1+.jpg",
+         large_img:"/../img/1+.jpg",
          price: 500 ,
          details: "in-room spa services",
          details_l:`Located in the city centre, DoubleTree by Hilton Toronto Downtown boasts an indoor heated pool, an on-site restaurant, and a fitness centre. Toronto Eaton Centre and St. Patrick Subway Station are within 350 m.
