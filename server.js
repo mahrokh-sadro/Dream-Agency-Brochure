@@ -33,7 +33,7 @@ app.use("/destination",destinationController);
 app.use("/user",userController);
 
 
-const PORT = 3000; 
+const PORT =process.env.PORT || 3000; 
 
 app.listen(PORT, ()=>{  // 2 Parameters: PORT, callback function
     console.log(`Web Server Application is running and listening on port ${PORT}`);
