@@ -38,7 +38,7 @@ const DestinationModel={
       rating: 5,       
       type: "Apartments" ,     
       small_img:"../img/2.jpg",
-      large_img:"../img/2+.jpg",
+      large_img:"/../img/2+.jpg",
       price: 400 ,
       details: "Located in Myrtle Beach",
       details_l:`Located in the centre of Eilat, just a 12-minute walk from the shores of the Red Sea, Comfort hotel Eilat offers an outdoor pool with grill bar, free WiFi throughout, and air-conditioned rooms with a 40" LCD TV and private bathroom.
@@ -56,7 +56,7 @@ const DestinationModel={
    rating: 5,       
    type: "Resorts" ,     
    small_img:"../img/3+.jpg",
-   large_img:"../img/3++.jpg",
+   large_img:"/../img/3++.jpg",
    price: 100 ,
    details: "Located on the marina",
    details_l:`Kamahana 3 Condo is located in Princeville, 2.8 km from Black Pot Beach and
@@ -75,7 +75,7 @@ const DestinationModel={
    rating: 5,       
    type: "Villas" ,     
    small_img:"../img/4.jpg",
-   large_img:"../img/4+.jpg",
+   large_img:"/../img/4+.jpg",
    price: 100 ,
    details: "outdoor pool and a gym",
    details_l:`Located in Princeville in the Hawaii region, Sandpiper 121B Condo features a
@@ -96,7 +96,7 @@ const DestinationModel={
    rating: 5,       
    type: "Cabins" ,     
    small_img:"../img/5.jpg",
-   large_img:"../img/5+.jpg",
+   large_img:"/../img/5+.jpg",
    price: 100 ,
    details: "3 bedrooms , 2 bathroom",
    details_l:`Built in 1914, this downtown Toronto hotel blends historic charm and elegance
@@ -124,7 +124,7 @@ const DestinationModel={
    rating: 5,       
    type: "Cottages" ,     
    small_img:"../img/6.jpg",
-   large_img:"../img/6+.jpg",
+   large_img:"/../img/6+.jpg",
    price: 100 ,
    details: " 2 pools with a hot tub",
    details_l:``
@@ -136,7 +136,7 @@ const DestinationModel={
    rating: 5,       
    type: "Glamping" ,     
    small_img:"../img/7.png",
-   large_img:"../img/7+.jpg",
+   large_img:"/../img/7+.jpg",
    price: 100 ,
    details: "3 bedrooms, gym",
    details_l:`This downtown Toronto hotel, located within a 5-minute walk of the Bloor-Yonge 
@@ -162,7 +162,7 @@ const DestinationModel={
    rating: 5,       
    type: "Serviced Apartments" ,     
    small_img:"../img/8.jpg",
-   large_img:"../img/8+.jpg",
+   large_img:"/../img/8+.jpg",
    price: 100 ,
    details: "2bedroom and 3bedroom units",
    details_l:`Centrally located in the city of Toronto, this hotel is 10 minutes' walk from
@@ -193,7 +193,7 @@ const DestinationModel={
    rating: 5,       
    type: "Holiday Homes" ,     
    small_img:"../img/9.jpg",
-   large_img:"../img/9+.jpg",
+   large_img:"/../img/9+.jpg",
    price: 100 ,
    details: "6 bedrooms, 7 bathrooms",
    details_l:`Boasting an on-site restaurant and lounge, the Anndore House is located in 
@@ -229,7 +229,7 @@ const DestinationModel={
    rating: 5,       
    type: "Guest Houses" ,     
    small_img:"../img/10.jpg",
-   large_img:"../img/10+.jpg",
+   large_img:"/../img/10+.jpg",
    price: 100 ,
    details: "add later",
    details_l:``
@@ -241,7 +241,7 @@ const DestinationModel={
    rating: 5,       
    type: "Hostels" ,     
    small_img:"../img/11.jpg",
-   large_img:"../img/11+.jpg",
+   large_img:"/../img/11+.jpg",
    price: 100 ,
    details: "200 rooms",
    details_l:`This harbourfront hotel features on-site dining as well as a rooftop patio 
@@ -272,7 +272,7 @@ const DestinationModel={
    rating: 5,       
    type: "Motels" ,     
    small_img:"../img/12.jpg",
-   large_img:"../img/12+.jpg",
+   large_img:"/../img/12+.jpg",
    price: 200 ,
    details: "4 beds (1 twin, 1 full, 1 king, 1 sofa bed)",
    details_l:`Located in the centre of Eilat, just a 12-minute walk from the shores of
