@@ -2,7 +2,7 @@
 //syntx for exporting multiple things
 //if res.render() becomes before next,next never will b executed
 
-exports.validateLoginFrom = (req, res, next){
+exports.validateLoginFrom = (req, res, next)=>{
 
 
     if(firstName==""){
