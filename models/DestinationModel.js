@@ -11,7 +11,7 @@ const DestinationModel={
          rating: 5,       
          type: "Hotels" ,     
          small_img:"../img/1.jpg",
-         large_img:"../img/1+.jpg",
+         large_img:"https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
          price: 500 ,
          details: "in-room spa services",
          details_l:`Located in the city centre, DoubleTree by Hilton Toronto Downtown boasts an indoor heated pool, an on-site restaurant, and a fitness centre. Toronto Eaton Centre and St. Patrick Subway Station are within 350 m.
@@ -38,7 +38,7 @@ const DestinationModel={
       rating: 5,       
       type: "Apartments" ,     
       small_img:"../img/2.jpg",
-      large_img:"../img/2+.jpg",
+      large_img:"https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80",
       price: 400 ,
       details: "Located in Myrtle Beach",
       details_l:`Located in the centre of Eilat, just a 12-minute walk from the shores of the Red Sea, Comfort hotel Eilat offers an outdoor pool with grill bar, free WiFi throughout, and air-conditioned rooms with a 40" LCD TV and private bathroom.
@@ -56,7 +56,7 @@ const DestinationModel={
    rating: 5,       
    type: "Resorts" ,     
    small_img:"../img/3+.jpg",
-   large_img:"../img/3++.jpg",
+   large_img:"https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
    price: 100 ,
    details: "Located on the marina",
    details_l:`Kamahana 3 Condo is located in Princeville, 2.8 km from Black Pot Beach and
@@ -75,7 +75,7 @@ const DestinationModel={
    rating: 5,       
    type: "Villas" ,     
    small_img:"../img/4.jpg",
-   large_img:"../img/4+.jpg",
+   large_img:"https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
    price: 100 ,
    details: "outdoor pool and a gym",
    details_l:`Located in Princeville in the Hawaii region, Sandpiper 121B Condo features a
@@ -96,7 +96,7 @@ const DestinationModel={
    rating: 5,       
    type: "Cabins" ,     
    small_img:"../img/5.jpg",
-   large_img:"../img/5+.jpg",
+   large_img:"https://images.unsplash.com/photo-1567636788276-40a47795ba4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
    price: 100 ,
    details: "3 bedrooms , 2 bathroom",
    details_l:`Built in 1914, this downtown Toronto hotel blends historic charm and elegance
@@ -124,7 +124,7 @@ const DestinationModel={
    rating: 5,       
    type: "Cottages" ,     
    small_img:"../img/6.jpg",
-   large_img:"../img/6+.jpg",
+   large_img:"https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
    price: 100 ,
    details: " 2 pools with a hot tub",
    details_l:``
@@ -136,7 +136,7 @@ const DestinationModel={
    rating: 5,       
    type: "Glamping" ,     
    small_img:"../img/7.png",
-   large_img:"../img/7+.jpg",
+   large_img:"https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
    price: 100 ,
    details: "3 bedrooms, gym",
    details_l:`This downtown Toronto hotel, located within a 5-minute walk of the Bloor-Yonge 
@@ -162,7 +162,7 @@ const DestinationModel={
    rating: 5,       
    type: "Serviced Apartments" ,     
    small_img:"../img/8.jpg",
-   large_img:"../img/8+.jpg",
+   large_img:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
    price: 100 ,
    details: "2bedroom and 3bedroom units",
    details_l:`Centrally located in the city of Toronto, this hotel is 10 minutes' walk from
@@ -193,7 +193,7 @@ const DestinationModel={
    rating: 5,       
    type: "Holiday Homes" ,     
    small_img:"../img/9.jpg",
-   large_img:"../img/9+.jpg",
+   large_img:"https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
    price: 100 ,
    details: "6 bedrooms, 7 bathrooms",
    details_l:`Boasting an on-site restaurant and lounge, the Anndore House is located in 
@@ -229,10 +229,28 @@ const DestinationModel={
    rating: 5,       
    type: "Guest Houses" ,     
    small_img:"../img/10.jpg",
-   large_img:"../img/10+.jpg",
-   price: 100 ,
+   large_img:"https://images.unsplash.com/photo-1589651820675-e5f09ecfb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
    details: "add later",
-   details_l:``
+   details_l:`This harbourfront hotel features on-site dining as well as a rooftop patio 
+   with a seasonal pool. A mini-fridge and coffee maker are included in each guest room.
+
+   A large work desk and flat-screen TV are common to all rooms at Radisson Blu Downtown
+    Toronto. A pool, harbour or city view may be featured in these rooms.
+   
+   Showcasing regional ingredients, Watermark Restaurant specializes in Canadian cuisine.
+    Light snacks are served at Radisson Admiral’s Watermark Lounge, along with local beers
+     and wines.
+   
+   A fitness centre is among recreational facilities available at Radisson Blu Downtown
+    Toronto.
+   
+   Union Station is about 15 minutes’ walk from this hotel. Several attractions, including 
+   the CN Tower, Hockey Hall of Fame and lively Chinatown, are also within 15 minutes’ walk.
+    Billy Bishop Toronto City Airport is 2 km away.
+   
+   This is our guests' favourite part of Toronto, according to independent reviews.
+   
+   Couples particularly like the location — they rated it 9.4 for a two-person trip.`
 }, 
 {
    id:11,
@@ -241,7 +259,7 @@ const DestinationModel={
    rating: 5,       
    type: "Hostels" ,     
    small_img:"../img/11.jpg",
-   large_img:"../img/11+.jpg",
+   large_img:"https://images.unsplash.com/photo-1623718649591-311775a30c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
    price: 100 ,
    details: "200 rooms",
    details_l:`This harbourfront hotel features on-site dining as well as a rooftop patio 
@@ -272,7 +290,7 @@ const DestinationModel={
    rating: 5,       
    type: "Motels" ,     
    small_img:"../img/12.jpg",
-   large_img:"../img/12+.jpg",
+   large_img:"https://images.unsplash.com/photo-1623718649591-311775a30c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
    price: 200 ,
    details: "4 beds (1 twin, 1 full, 1 king, 1 sofa bed)",
    details_l:`Located in the centre of Eilat, just a 12-minute walk from the shores of

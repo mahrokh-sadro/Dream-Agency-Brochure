@@ -43,7 +43,7 @@ router.post("/registration", (req, res) => {
     let passwordConf_err;
     let passLength_err;
     let emailRegMatch_err;
-    const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    // const emailRegexp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
     if (req.body.reg_name == "") {
         name_err = "Please enter a first name";
@@ -70,9 +70,9 @@ router.post("/registration", (req, res) => {
     if (req.body.reg_password && req.body.reg_password.length < 6 || req.body.reg_password.length > 12) {
         passLength_err = "Pssword must be between 6 to 12 characters.";
     }
-    if (emailRegexp.test(req.body.reg_email) !== true) {
-        passRegMatch_err = "Email is not valid.";
-    }
+    // if (emailRegexp.test(req.body.reg_email) !== true) {
+    //     passRegMatch_err = "Email is not valid.";
+    // }
     //preserving data
     let name = req.body.reg_name;
     let lastname = req.body.reg_lastname;
@@ -81,7 +81,7 @@ router.post("/registration", (req, res) => {
 
     //This represents failed validation
     if (name_err || lastname_err || email_err
-        || password_err || repassword_err || passwordConf_err || passRegMatch_err) {
+        || password_err || repassword_err || passwordConf_err) {
         res.render("registration", {
 
             name_err,
