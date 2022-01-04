@@ -1,54 +1,61 @@
-<div class="text-center m-pt-150 ">
- 
-  <form action="/user/registration" method="POST" style="max-width:480px; margin:auto; padding-top: 150px">
+<div class="text-center m-pt-150">
 
-    <h1 class="h3 mb-3  h2-font ">Register</h1>
+  <form
+    action="/user/registration"
+    method="POST"
+    style="max-width:480px; margin:auto; padding-top: 150px"
+  >
 
-    <div class="form-row mb-0">
-      <div class="form-group col-md-6">
+    <h1 class="h3 mb-3 h2-font">Register</h1>
+    <p> {{error}} </p>
+    <p> {{successMessage}} </p>
+    <p> {{errorMessage}} </p>
 
-        <label class="sr-only">Name</label>
-        <input type="text" id="reg_name" name="reg_name"value="{{name}}"  class="form-control mb-3" placeholder="Name" autofocus>
+    <label class="sr-only">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      value="{{name}}"
+      class="form-control mb-3"
+      placeholder="Name"
+      autofocus
+    />
 
-        <section class="error-list text-danger">{{name_err}}</section>
-     
-      </div>
-
-      <div class="form-group col-md-6">
-        <label class="sr-only">LastName</label>
-        <input type="text" id="reg_lastname" name="reg_lastname" value="{{lastname}}" class="form-control mb-3" placeholder="LastName">
-      
-        <section class="error-list text-danger">{{lastname_err}}</section>
-       
-
-      </div>
-    </div>
-
-
-    <label class="sr-only ">Email address</label>
-    <input type="email" id="reg_email" name="reg_email" value="{{email}}"  class="form-control mb-3 m-minus-margin" placeholder="Email">
-    
-    <section class="error-list text-danger">{{email_err}}</section>
-    <section class="error-list text-danger">{{emailRegMatch_err}}</section>
-
+    <label class="sr-only">Email address</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      value="{{email}}"
+      class="form-control mb-3 m-minus-margin"
+      placeholder="Email"
+    />
 
     <label for="password" class="sr-only">Password</label>
-    <input type="password" id="reg_password" name="reg_password"  placeholder="Password" class="form-control mb-3">
-   
-    <section class="error-list text-danger">{{password_err}}</section>
-    <section class="error-list text-danger">{{passLength_err}}</section>
-
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Password"
+      class="form-control mb-3"
+    />
 
     <label for="reg_passwordConfirm" class="sr-only">Password Confirmation</label>
-    <input type="password" id="reg_repassword" name="reg_repassword" placeholder="Password Confirmation"
-      class="form-control">
-    
-    <section class="error-list text-danger">{{repassword_err}}</section>
-    <section class="error-list text-danger">{{passwordConf_err}}</section>
+    <input
+      type="password"
+      id="password2"
+      name="password2"
+      placeholder="Password Confirmation"
+      class="form-control"
+    />
 
     <div class="checkbox mt-3">
       <div class="mt-3 mb-5">
-        <button type="submit" class="btn btn-lg btn-primary btn-block">Register</button>
+        <button
+          type="submit"
+          class="btn btn-lg btn-primary btn-block"
+        >Register</button>
       </div>
     </div>
   </form>
