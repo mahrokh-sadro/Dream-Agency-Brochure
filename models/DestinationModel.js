@@ -6,7 +6,7 @@ const DestinationModel={
    destinations:[
       {
          id:1,
-         title:"Hotel One Toronto-Piccadilly",
+         title:"Hotel One Toronto-Piccadilly,In the heart of downtown",
          location: "Toronto",    
          rating: 5,       
          type: "Hotels" ,     
@@ -188,7 +188,7 @@ const DestinationModel={
 },
 {
    id:9,
-   title:"Views of the ocean, top floor, Pool, Hot Tub, Island Style Pali Ke Kua #242!",
+   title:"Views of the ocean, top floor, Pool, Hot Tub, Island Style Pali Ke Kua",
    location: "Banff",    
    rating: 5,       
    type: "Holiday Homes" ,     
@@ -224,7 +224,7 @@ const DestinationModel={
 },
 {
    id:10,
-   title:"Hale Moi 112B, Queen Bed, Breakfast Bar, Lanai, AC, Sunsets condo",
+   title:"Hale Moi 112B, Queen Bed, Breakfast Bar, Lanai, AC, Sunsets",
    location: "Banff",    
    rating: 5,       
    type: "Guest Houses" ,     
@@ -236,7 +236,7 @@ const DestinationModel={
 }, 
 {
    id:11,
-   title:"Cliffs at Princeville #1208B Garden Unit, North Shore Resort",
+   title:"Cliffs at Princeville Garden Unit, North Shore Resort",
    location: "Banff",    
    rating: 5,       
    type: "Hostels" ,     

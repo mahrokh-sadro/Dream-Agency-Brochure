@@ -1,8 +1,8 @@
-
-<div class="m-pt "></div>
+{{!-- style="padding-top: 50px"
+<div class="m-pt mt-5" style="margin-top: 50px">
 {{#each allDestinations }}
-<div class="card mb-3 mx-auto  shadow-lg p-3  bg-white rounded m-card-hover " style="max-width: 800px;">
-  <div class="row ">
+<div class="card mb-3 mx-auto  shadow-lg p-3  bg-white rounded m-card-hover " style="max-width: 800px; padding-top: 50px">
+  <div class="row "  >
     <div class="col-md-4  ">
        <a href="/destination/listing/{{this.id}}">
       <img class="m-destinationListing-img " src="{{this.small_img}}" alt="...">
@@ -19,4 +19,25 @@
     </div>
   </div>
 </div>
-{{/each}}
+{{/each}} --}}
+ <div class="m-pt mt-5" style="margin-right:60px; margin-left:60px; padding-top: 80px;  margin-bottom: 80px">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+ 
+  {{#each allDestinations }}
+  <div class="col">
+    <div class="card">
+         <a href="/destination/listing/{{this.id}}">
+      <img src="{{this.small_img}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+            </a>
+         <p class="card-text">{{this.price}}$ per night</p>
+          <p class="card-text">{{this.details}}</p>
+      </div>
+  
+    </div>
+  </div>
+  {{/each}}
+</div>
+</div>
+
