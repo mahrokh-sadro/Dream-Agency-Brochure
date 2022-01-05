@@ -23,10 +23,12 @@ router.post("/login", (req, res) => {
           .compare(password, user.password)
           .then((isMatch) => {
             if (isMatch) {
-              //create a token
-              const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
-              //put the token in cookie
-              res.cookie("token", token, { expire: new Date() + 9999 });
+              req.session.user = {
+                user: user.name,
+                email: user.email,
+                password: user.password,
+              };
+
               res.redirect("/");
             } else {
               errors.push("Sorry, your email and/or password incorrect ");
@@ -58,7 +60,7 @@ router.post(
         error: errors.array()[0].msg,
       });
     }
-    console.log(req.body);
+
     const user = new UserModel(req.body);
     user.save((err, user) => {
       if (err) {
@@ -85,8 +87,9 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-  res.clearCookie("token");
-  res.redirect("/login");
+  //   res.clearCookie("token");
+  req.session.destroy();
+  res.redirect("/user/login");
 });
 
 module.exports = router;

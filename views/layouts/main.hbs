@@ -81,7 +81,7 @@
       </a>
 
 
-
+  
       <div class="collapse navbar-collapse nav-items-center" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto">
 
@@ -93,19 +93,34 @@
           <li class="nav-item active">
             <a href="/destination/listing" class="nav-link">Listing</a>
           </li>
-       
+
+      
+          
+ 
+      
+          {{#unless session.user}}
           <li class="nav-item active">
             <a href="/user/login" class="nav-link ">LogIn</a>
           </li>
+         
           <li class="nav-item active">
             <a href="/user/registration" class="nav-link ">Registration</a>
           </li>
-           <li class="nav-item active">
-            <a href="/user/registration" class="nav-link ">Log out</a>
+            {{/unless}}
+          {{#if session.user}}
+          <li class="nav-item active">
+            <a href="/user/logout" class="nav-link ">Log out</a>
           </li>
+          {{/if}}
+          
+
+          
+       
+
         </ul>
       </div>
-
+  
+  
 </nav>
 
 
