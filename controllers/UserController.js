@@ -4,30 +4,42 @@ const { check, validationResult } = require("express-validator");
 const UserModel = require("../models/UserModel.js");
 const jwt = require("jsonwebtoken");
 const expressJwt = require("express-jwt");
+const bcrypt = require("bcrypt");
 
-// router.post("/login", (req, res) => {
-//   let email_err;
-//   let password_err;
+router.post("/login", (req, res) => {
+  const { email, password } = req.body;
 
-//   if (req.body.email == "") {
-//     email_err = "Please enter your email";
-//   }
+  UserModel.findOne({ email })
+    .then((user) => {
+      const errors = [];
 
-//   if (req.body.password == "") {
-//     password_err = "Please enter your password";
-//   }
-
-//   let email = req.body.email;
-//   if (email_err || password_err) {
-//     res.render("login", {
-//       email_err,
-//       password_err,
-//       email,
-//     });
-//   } else {
-//     res.redirect("/");
-//   }
-// });
+      if (user == null) {
+        errors.push("Sorry, your email and/or password incorrect");
+        res.render("login", {
+          errors,
+        });
+      } else {
+        bcrypt
+          .compare(password, user.password)
+          .then((isMatch) => {
+            if (isMatch) {
+              //create a token
+              const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
+              //put the token in cookie
+              res.cookie("token", token, { expire: new Date() + 9999 });
+              res.redirect("/");
+            } else {
+              errors.push("Sorry, your email and/or password incorrect ");
+              res.render("login", {
+                errors,
+              });
+            }
+          })
+          .catch((err) => console.log(`Error ${err}`));
+      }
+    })
+    .catch((err) => console.log(`Error ${err}`));
+});
 
 router.post(
   "/registration",
@@ -63,11 +75,18 @@ router.post(
     //  res.redirect("/"); // sending a GET req to specified route
   }
 );
+
 router.get("/registration", (req, res) => {
   res.render("registration");
 });
+
 router.get("/login", (req, res) => {
   res.render("login");
+});
+
+router.get("/logout", (req, res) => {
+  res.clearCookie("token");
+  res.redirect("/login");
 });
 
 module.exports = router;

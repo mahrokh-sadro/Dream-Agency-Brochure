@@ -1,21 +1,41 @@
-<div class="text-center mb-5  mt-5">
+<div class="text-center mb-5 mt-5">
 
-  <form action="/user/login" method="POST" style="max-width:480px; margin:auto; padding-top: 50px">
+  <form
+    action="/user/login"
+    method="POST"
+    style="max-width:480px; margin:auto; padding-top: 50px"
+  >
+    <p>{{errors}}</p>
+    <h1 class="h3 mb-3 h2-font mt-5">Please Sign In</h1>
 
-    <h1 class="h3 mb-3  h2-font mt-5 ">Please Sign In</h1>
     <label class="sr-only">Email address</label>
-    <input type="email" id="email" name="email" value="{{email}}" class="form-control mb-3" placeholder="Email" autofocus>
-    <section class="error-list text-danger">{{email_err}}</section>
-    
+    <input
+      type="email"
+      id="email"
+      name="email"
+      value="{{email}}"
+      class="form-control mb-3"
+      placeholder="Email"
+      autofocus
+      required
+    />
+    {{!-- <section class="error-list text-danger">{{email_err}}</section> --}}
 
     <label for="password" class="sr-only">Password</label>
-    <input type="password" id="password" name="password" value="{{password}}" placeholder="Password" class="form-control">
-    <section class="error-list text-danger">{{password_err}}</section>
-   
+    <input
+      type="password"
+      id="password"
+      name="password"
+      value="{{password}}"
+      placeholder="Password"
+      class="form-control"
+      required
+    />
+    {{!-- <section class="error-list text-danger">{{password_err}}</section> --}}
 
     <div class="checkbox mt-3">
       <label>
-        <input type="checkbox" value="remember-me">Remember me
+        <input type="checkbox" value="remember-me" />Remember me
       </label>
     </div>
 
