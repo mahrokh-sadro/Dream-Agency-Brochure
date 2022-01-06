@@ -41,6 +41,16 @@ router.get("/category/:cat", (req, res) => {
   });
 });
 
+router.get("/location/:loc", (req, res) => {
+  const loc = req.params.loc;
+  console.log(loc);
+  const destinations = DestinationModel.getAllByLocation(loc);
+  console.log(destinations);
+  res.render("byLocationListing", {
+    destinations,
+  });
+});
+
 router.get("/explore/:id", (req, res) => {
   const id = req.params.id;
   // console.log(id);

@@ -33,7 +33,7 @@ const DestinationModel = {
     {
       id: 26,
       title: "Hotel One Toronto-Piccadilly,In the heart of downtown",
-      location: "Toronto",
+      location: "New york",
       rating: 5,
       type: "Hotels",
       small_img: "/img/26.jpg",
@@ -60,7 +60,7 @@ const DestinationModel = {
     {
       id: 27,
       title: "Hotel One Toronto-Piccadilly,In the heart of downtown",
-      location: "Toronto",
+      location: "New york",
       rating: 5,
       type: "Hotels",
       small_img: "/img/27.jpg",
@@ -87,7 +87,7 @@ const DestinationModel = {
     {
       id: 28,
       title: "Hotel One Toronto-Piccadilly,In the heart of downtown",
-      location: "Toronto",
+      location: "New york",
       rating: 5,
       type: "Hotels",
       small_img: "/img/28.jpg",
@@ -114,7 +114,7 @@ const DestinationModel = {
     {
       id: 29,
       title: "Hotel One Toronto-Piccadilly,In the heart of downtown",
-      location: "Toronto",
+      location: "New york",
       rating: 5,
       type: "Hotels",
       small_img: "/img/29.jpg",
@@ -514,7 +514,7 @@ const DestinationModel = {
     {
       id: 6,
       title: "Newly Remodeled Cliffs Cottage in Princeville condo",
-      location: "Toronto",
+      location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
       small_img: "/img/6.jpg",
@@ -527,7 +527,7 @@ const DestinationModel = {
     {
       id: 32,
       title: "Newly Remodeled Cliffs Cottage in Princeville condo",
-      location: "Toronto",
+      location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
       small_img: "/img/32.jpg",
@@ -540,7 +540,7 @@ const DestinationModel = {
     {
       id: 33,
       title: "Newly Remodeled Cliffs Cottage in Princeville condo",
-      location: "Toronto",
+      location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
       small_img: "/img/33.jpg",
@@ -553,7 +553,7 @@ const DestinationModel = {
     {
       id: 34,
       title: "Newly Remodeled Cliffs Cottage in Princeville condo",
-      location: "Toronto",
+      location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
       small_img: "/img/34.jpg",
@@ -566,7 +566,7 @@ const DestinationModel = {
     {
       id: 35,
       title: "Newly Remodeled Cliffs Cottage in Princeville condo",
-      location: "Toronto",
+      location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
       small_img: "/img/35.jpg",
@@ -727,10 +727,10 @@ const DestinationModel = {
     {
       id: 8,
       title: "Belmont Apartments Toronto, an Ascend Hotel Collection Member",
-      location: "Toronto",
+      location: "New York",
       rating: 5,
       type: "Serviced Apartments",
-      small_img: "../img/8.jpg",
+      small_img: "/img/8.jpg",
       large_img:
         "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       price: 100,
@@ -763,7 +763,7 @@ const DestinationModel = {
       location: "Banff",
       rating: 5,
       type: "Holiday Homes",
-      small_img: "../img/9.jpg",
+      small_img: "/img/9.jpg",
       large_img:
         "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       price: 100,
@@ -800,7 +800,7 @@ const DestinationModel = {
       location: "Banff",
       rating: 5,
       type: "Guest Houses",
-      small_img: "../img/10.jpg",
+      small_img: "/img/10.jpg",
       large_img:
         "https://images.unsplash.com/photo-1589651820675-e5f09ecfb338?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       details: "add later",
@@ -831,7 +831,7 @@ const DestinationModel = {
       location: "Banff",
       rating: 5,
       type: "Hostels",
-      small_img: "../img/11.jpg",
+      small_img: "/img/11.jpg",
       large_img:
         "https://images.unsplash.com/photo-1623718649591-311775a30c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       price: 100,
@@ -863,7 +863,7 @@ const DestinationModel = {
       location: "Banff",
       rating: 5,
       type: "Motels",
-      small_img: "../img/12.jpg",
+      small_img: "/img/12.jpg",
       large_img:
         "https://images.unsplash.com/photo-1623718649591-311775a30c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       price: 200,
@@ -1011,6 +1011,10 @@ const DestinationModel = {
 
   getAllByProperty(property) {
     return this.destinations.filter((e) => e.type === property);
+  },
+
+  getAllByLocation(location) {
+    return this.destinations.filter((e) => e.location === location);
   },
 };
 

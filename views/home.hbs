@@ -260,7 +260,7 @@
     <div class="container">
         <div class="row ">
             <div class="col-6">
-                <h2 class="mb-3 text-left h2-font">Browse By Location Type</h2>
+                <h2 class="mb-3 text-left h2-font">Browse By Location</h2>
             </div>
             <div class="col-12">
                 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
@@ -268,22 +268,26 @@
                         {{#each torontoBanffObj }}
                         <div class="col-md-6 mb-3">
                             <div class="card">
+                                       <a href="/destination/location/{{this.location}}">   
                                 <img class="img-fluid  mosaic-images" alt="100%x280" src="{{this.large_img}}">
                                 <div class="card-img-overlay text-white">
                                     <h4 class="card-title">{{this.location}}</h4>
                                     <img class="m_flag_img" src="{{this.flag}}" alt="">
                                 </div>
+                                       </a>
                             </div>
                         </div>
                         {{/each}}
                         {{#each getOtherLocationObjs}}
                         <div class="col-md-4 mb-3">
+                              <a href="/destination/location/{{this.location}}">   
                             <div class="card ">
                                 <img class="img-fluid  mosaic-images " alt="100%x280" src="{{this.large_img}}">
                                 <div class="card-img-overlay text-white">
                                     <h4 class="card-title">{{this.location}}</h4>
                                     <img class="m_flag_img" src="{{this.flag}}" alt="">
                                 </div>
+                                   </a>
                             </div>
                         </div>
                         {{/each}}
