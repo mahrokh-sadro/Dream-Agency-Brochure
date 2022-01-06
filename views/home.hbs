@@ -3,13 +3,19 @@
 <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
   <div class="carousel-inner m-pt-150">
     <div class="carousel-item active">
+         <a href="destination/listing">
       <img class="d-block w-100" src="{{hereSecActiveImg.img}}" alt="First slide">
+         </a>
     </div>
+
      {{#each hereSecOtherImg}}
+     <a href="destination/listing">
     <div class="carousel-item">
       <img class="d-block w-100" src="{{this.img}}" alt="Second slide">
     </div>
+    </a>
      {{/each }}
+
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -37,22 +43,28 @@
                             <div class="row">
 
                                 <div class="col-md-4 mb-3 ">
+                                 
                                     <div class="card">
+                                        
                                         <img class="img-fluid" alt="100%x280" src="{{firsttypeFirstObj.small_img}}">
                                         <div class="card-body">
-                                            <h4 class="card-title">{{firsttypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{firsttypeFirstObj.details}}</small></p>
-
+                                        <a href="/destination/category/{{firsttypeFirstObj.type}}">    
+                                               <h4 class="card-title">{{firsttypeFirstObj.type}}</h4>
+                                        </a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{firsttypeFirstObj.details}}</small></p> --}}
                                         </div>
-
                                     </div>
+                                 
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
-                                        <img class="img-fluid" alt="100%x280" src="{{secondTypeFirstObj.small_img}}">
+                                     
+                                         <img class="img-fluid" alt="100%x280" src="{{secondTypeFirstObj.small_img}}">
                                         <div class="card-body">
-                                            <h4 class="card-title">{{secondTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{secondTypeFirstObj.details}}</small></p>
+                                                                                  <a href="/destination/category/{{secondTypeFirstObj.type}}">    
+
+                                            <h4 class="card-title">{{secondTypeFirstObj.type}}</h4></a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{secondTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
                                     </div>
@@ -60,9 +72,11 @@
                                 <div class="col-md-4 mb-3 ">
                                     <div class="card">
                                         <img class="img-fluid" alt="100%x280" src="{{thirdTypeFirstObj.small_img}}">
+                                     
                                         <div class="card-body">
-                                            <h4 class="card-title">{{thirdTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{thirdTypeFirstObj.details}}</small></p>
+                                          <a href="/destination/category/{{thirdTypeFirstObj.type}}">    
+                                            <h4 class="card-title">{{thirdTypeFirstObj.type}}</h4> </a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{thirdTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
                                     </div>
@@ -75,10 +89,13 @@
 
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
+                                 
                                         <img class="img-fluid" alt="100%x280" src="{{fourthTypeFirstObj.small_img}}">
+                                      
                                         <div class="card-body">
-                                            <h4 class="card-title">{{fourthTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{fourthTypeFirstObj.details}}</small></p>
+                                                    <a href="/destination/category/{{fourthTypeFirstObj.type}}">  
+                                            <h4 class="card-title">{{fourthTypeFirstObj.type}}</h4> </a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{fourthTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
 
@@ -87,9 +104,12 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
                                         <img class="img-fluid" alt="100%x280" src="{{fifthTypeFirstObj.small_img}}">
+                                   
                                         <div class="card-body">
-                                            <h4 class="card-title">{{fifthTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{fifthTypeFirstObj.details}}</small></p>
+                                      <a href="/destination/category/{{fifthTypeFirstObj.type}}">    
+
+                                            <h4 class="card-title">{{fifthTypeFirstObj.type}}</h4>   </a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{fifthTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
                                     </div>
@@ -97,9 +117,11 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card">
                                         <img class="img-fluid" alt="100%x280" src="{{sixthTypeFirstObj.small_img}}">
+                                     
                                         <div class="card-body">
-                                            <h4 class="card-title">{{sixthTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{sixthTypeFirstObj.details}}</small></p>
+                                          <a href="/destination/category/{{sixthTypeFirstObj.type}}">    
+                                            <h4 class="card-title">{{sixthTypeFirstObj.type}}</h4> </a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{sixthTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
                                     </div>
@@ -114,8 +136,9 @@
                                     <div class="card">
                                         <img class="img-fluid" alt="100%x280" src="{{seventhTypeFirstObj.small_img}}">
                                         <div class="card-body">
-                                            <h4 class="card-title">{{seventhTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{seventhTypeFirstObj.details}}</small></p>
+                                          <a href="/destination/category/{{seventhTypeFirstObj.type}}">    
+                                            <h4 class="card-title">{{seventhTypeFirstObj.type}}</h4></a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{seventhTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
 
@@ -125,8 +148,9 @@
                                     <div class="card">
                                         <img class="img-fluid" alt="100%x280" src="{{eighthTypeFirstObj.small_img}}">
                                         <div class="card-body">
-                                            <h4 class="card-title">{{eighthTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{eighthTypeFirstObj.details}}</small></p>
+                                           <a href="/destination/category/{{seventhTypeFirstObj.type}}">    
+                                            <h4 class="card-title">{{eighthTypeFirstObj.type}}</h4></a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{eighthTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
                                     </div>
@@ -135,8 +159,9 @@
                                     <div class="card">
                                         <img class="img-fluid" alt="100%x280" src="{{ninethTypeFirstObj.small_img}}">
                                         <div class="card-body">
-                                            <h4 class="card-title">{{ninethTypeFirstObj.type}}</h4>
-                                            <p class="card-text"><small class="text-muted">{{ninethTypeFirstObj.details}}</small></p>
+                                            <a href="/destination/category/{{seventhTypeFirstObj.type}}">    
+                                            <h4 class="card-title">{{ninethTypeFirstObj.type}}</h4></a>
+                                            {{!-- <p class="card-text"><small class="text-muted">{{ninethTypeFirstObj.details}}</small></p> --}}
 
                                         </div>
                                     </div>
@@ -169,24 +194,26 @@
                     <div class="row">
 
                         <div class="col-md-3 mb-3">
+                            <a href="destination/explore/2">
                             <div class="card">
-                                <img class="img-fluid " alt="100%x280"
+                            
+                                <img class="img-fluid" alt="100%x280"
                                     src="../img/explore/2.jpg">
                                 <div class="card-body">
-                                    <h4 class="card-title">The Bay of Fundy in Nova Scotia</h4>
+                                    <h4 class="card-title">The Bay of Fundy in Nova Scotia</h4>  </a>
                                     <p class="card-text"><small class="text-muted">River sources: Big Salmon River, Magaguadavic River</small></p>
-
                                 </div>
-
                             </div>
+                              
                         </div>
                         <div class="col-md-3 mb-3">
+                             <a href="destination/explore/3"> 
                             <div class="card">
                                 <img class="img-fluid " alt="100%x280"
                                  src="../img/explore/3.jpg">
 
                                 <div class="card-body">
-                                    <h4 class="card-title">Grasslands National Park</h4>
+                                    <h4 class="card-title">Grasslands National Park</h4></a>
                                     <p class="card-text"><small class="text-muted">Lies adjacent to the international boundary
                                        </small> </p>
 
@@ -194,23 +221,25 @@
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
+                               <a href="destination/explore/4"> 
                             <div class="card">
                                 <img class="img-fluid " alt="100%x280"
                                      src="../img/explore/4.jpg">
 
                                 <div class="card-body">
-                                    <h4 class="card-title">The Grotto at Bruce Peninsula Park</h4>
+                                    <h4 class="card-title">The Grotto at Bruce Peninsula Park</h4></a>
                                     <p class="card-text"><small class="text-muted"> One of the top tourism attractions in Ontario</small></p>
 
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
+                          <a href="destination/explore/5"> 
                             <div class="card">
                                 <img class="img-fluid m_height" alt="100%x280"
-               src="../img/explore/5.jpg">
+                                  src="../img/explore/5.jpg">
                                 <div class="card-body">
-                                    <h4 class="card-title">Abraham Lake – Ice Bubbles</h4>
+                                    <h4 class="card-title">Abraham Lake – Ice Bubbles</h4></a>
                                     <p class="card-text"><small class="text-muted">stunning snowscapes and even more amazing frozen bubbles</small></p>
 
                                 </div>
@@ -277,18 +306,19 @@
                 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                     <div class="row ">
                             <div class="col-md-6 mb-3">
-                                <div class="card">
-                                    <img class="img-fluid " alt="100%x280" src="../img/discoverMoreImg/10.jpg">
+                                 <a href="/destination/insp">
+                                <div class="card">                                 
+                                    <img class="img-fluid " alt="100%x280" src="../img/discoverMoreImg/10.jpg">                                   
                                     <div class="card-img-overlay text-white">
                                         <h4 class="card-title"> </h4>
                                         <img class="m_flag_img" src="" alt="">
                                     </div>
-
                                 </div>
+                                </a>
                             </div>
                     
                             <div class="col-md-6 mb-3">
-
+                               <a href="/destination/insp">
                                 <div class="card">
                                     <img class="img-fluid " alt="100%x280" src="../img/discoverMoreImg/13.jpg">
                                     <div class="card-img-overlay text-white">
@@ -297,6 +327,7 @@
                                     </div>
 
                                 </div>
+                                </a>
                             </div>
                      
                     </div>
@@ -318,38 +349,39 @@
             <div class="col-12">
                 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                     <div class="row ">
-                      
+                <div class="col-md-4 mb-3">
+                       <a href="/destination/insp">
 
-                          
-                            <div class="col-md-4 mb-3">
                                 <div class="card ">
                                     <img class="img-fluid" alt="100%x280" src="../img/discoverMoreImg/11.jpg">
                                     <div class="card-img-overlay text-white">
-                                        <h4 class="card-title">{{this.location}}</h4>
-                                        <img class="m_flag_img" src="{{this.flag}}" alt="">
+                                     
                                     </div>
                                 </div>
+</a>
                             </div>
-
                       
                             <div class="col-md-4 mb-3">
+                           <a href="/destination/insp">
+
                                 <div class="card ">
                                     <img class="img-fluid" alt="100%x280" src="../img/discoverMoreImg/12.jpg">
                                     <div class="card-img-overlay text-white">
-                                        <h4 class="card-title">{{this.location}}</h4>
-                                        <img class="m_flag_img" src="{{this.flag}}" alt="">
                                     </div>
                                 </div>
+                               </a>
                             </div>
                         
                             <div class="col-md-4 mb-3">
+                         <a href="/destination/insp">
+
                                 <div class="card ">
                                     <img class="img-fluid" alt="100%x280" src="../img/discoverMoreImg/14.jpg">
                                     <div class="card-img-overlay text-white">
-                                        <h4 class="card-title">{{this.location}}</h4>
-                                        <img class="m_flag_img" src="{{this.flag}}" alt="">
+                                      
                                     </div>
                                 </div>
+                                 </a>
                             </div>
                            
                         </a> 
@@ -364,7 +396,3 @@
 </section>
 </div>
 
-
-
-
-      
