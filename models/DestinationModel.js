@@ -948,6 +948,7 @@ const DestinationModel = {
       (destination) => destination.type === "Apartments"
     );
   },
+
   thirdTypeFirstObj() {
     return this.destinations.find(
       (destination) => destination.type === "Resorts"
