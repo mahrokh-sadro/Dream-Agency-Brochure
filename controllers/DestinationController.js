@@ -8,7 +8,7 @@ const InspModel = require("../models/InspModel.js");
 router.get("/listing/:id", (req, res) => {
   //fetch the id from the url use the req obj
   const id = parseInt(req.params.id);
-  const pic = DestinationModel.getADestination(id);
+  const destination = DestinationModel.getADestination(id);
   res.render("destinationDetails", {
     destination,
   });

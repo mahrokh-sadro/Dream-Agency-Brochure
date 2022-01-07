@@ -32,7 +32,7 @@ const DestinationModel = {
     },
     {
       id: 26,
-      title: "Hotel One Toronto-Piccadilly,In the heart of downtown",
+      title: "Hotel veritatis ipsa pariatur voluptatem reiciendis ",
       location: "New york",
       rating: 5,
       type: "Hotels",
@@ -59,7 +59,7 @@ const DestinationModel = {
     },
     {
       id: 27,
-      title: "Hotel One Toronto-Piccadilly,In the heart of downtown",
+      title: "Hotel animi earum cupiditate accusantium voluptatum",
       location: "New york",
       rating: 5,
       type: "Hotels",
@@ -113,7 +113,7 @@ const DestinationModel = {
     },
     {
       id: 29,
-      title: "Hotel One Toronto-Piccadilly,In the heart of downtown",
+      title: "Hotel One Toronto-Piccadilly,lorem lorem lorem",
       location: "New york",
       rating: 5,
       type: "Hotels",
@@ -140,7 +140,7 @@ const DestinationModel = {
     },
     {
       id: 2,
-      title: "Stylish Apartment with a Patio close to the beach",
+      title: "Stylish Explicabo ut minima nihil, natus libero",
       location: "Texas",
       rating: 5,
       type: "Apartments",
@@ -160,7 +160,7 @@ const DestinationModel = {
 
     {
       id: 3,
-      title: "Luxurious Resorts with 5 Indoor Pools and Beach Access!",
+      title: "Luxurious Explicabo ut minima nihil, natus libero",
       location: "Banff",
       rating: 5,
       type: "Resorts",
@@ -180,7 +180,7 @@ const DestinationModel = {
     },
     {
       id: 15,
-      title: "Luxurious Resorts with 5 Indoor Pools and Beach Access!",
+      title: "Luxurious natus libero beatae a delectus hic",
       location: "Banff",
       rating: 5,
       type: "Resorts",
@@ -222,7 +222,7 @@ const DestinationModel = {
     },
     {
       id: 16,
-      title: "Trifecta Golf Villa Central to CCU and M Beach",
+      title: "Villa perferendis, distinctio sapiente eaque",
       location: "Vancouver",
       rating: 5,
       type: "Villas",
@@ -244,7 +244,7 @@ const DestinationModel = {
     },
     {
       id: 17,
-      title: "Trifecta Golf Villa Central to CCU and M Beach",
+      title: "Villa voluptas labore iure nostrum nulla eaque",
       location: "Vancouver",
       rating: 5,
       type: "Villas",
@@ -266,7 +266,7 @@ const DestinationModel = {
     },
     {
       id: 18,
-      title: "Trifecta Golf Villa Central to CCU and M Beach",
+      title: "Villa autem provident. Expedita corrupti maiores",
       location: "Vancouver",
       rating: 5,
       type: "Villas",
@@ -288,7 +288,7 @@ const DestinationModel = {
     },
     {
       id: 19,
-      title: "Trifecta Golf Villa Central to CCU and M Beach",
+      title: "villa veritatis ipsa pariatur voluptatem reiciendis",
       location: "Vancouver",
       rating: 5,
       type: "Villas",
@@ -339,7 +339,7 @@ const DestinationModel = {
     },
     {
       id: 20,
-      title: "Jasper Inn Murrells Inlet/Myrtle Beach Area",
+      title: "cabin veritatis ipsa pariatur voluptatem reiciendis",
       location: "Jasper",
       rating: 5,
       type: "Cabins",
@@ -368,7 +368,7 @@ const DestinationModel = {
     },
     {
       id: 21,
-      title: "Jasper Inn Murrells Inlet/Myrtle Beach Area",
+      title: "cabin animi earum cupiditate accusantium voluptatum",
       location: "Jasper",
       rating: 5,
       type: "Cabins",
@@ -397,7 +397,7 @@ const DestinationModel = {
     },
     {
       id: 22,
-      title: "Jasper Inn Murrells Inlet/Myrtle Beach Area",
+      title: "cabin nemo officiis aliquid quod. Soluta, quaerat illum",
       location: "Jasper",
       rating: 5,
       type: "Cabins",
@@ -426,7 +426,7 @@ const DestinationModel = {
     },
     {
       id: 23,
-      title: "Jasper Inn Murrells Inlet/Myrtle Beach Area",
+      title: "cabin Soluta, quaerat illum. Similique quidem",
       location: "Jasper",
       rating: 5,
       type: "Cabins",
@@ -455,7 +455,7 @@ const DestinationModel = {
     },
     {
       id: 24,
-      title: "Jasper Inn Murrells Inlet/Myrtle Beach Area",
+      title: "cabin lorem lorem  commodi saepe nesciunt earum",
       location: "Jasper",
       rating: 5,
       type: "Cabins",
@@ -526,7 +526,7 @@ const DestinationModel = {
     },
     {
       id: 32,
-      title: "Newly Remodeled Cliffs Cottage in Princeville condo",
+      title: "Cottage Explicabo ut minima nihil, natus libero",
       location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
@@ -539,7 +539,7 @@ const DestinationModel = {
     },
     {
       id: 33,
-      title: "Newly Remodeled Cliffs Cottage in Princeville condo",
+      title: "Cottage Explicabo veritatis ipsa pariatur voluptatem",
       location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
@@ -552,7 +552,7 @@ const DestinationModel = {
     },
     {
       id: 34,
-      title: "Newly Remodeled Cliffs Cottage in Princeville condo",
+      title: "cottage voluptatem reiciendis consequatur esse vitae",
       location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
@@ -565,7 +565,7 @@ const DestinationModel = {
     },
     {
       id: 35,
-      title: "Newly Remodeled Cliffs Cottage in Princeville condo",
+      title: "quam ut. Dignissimos cupiditate nobis",
       location: "Niagra Falls",
       rating: 5,
       type: "Cottages",
@@ -645,7 +645,7 @@ const DestinationModel = {
     },
     {
       id: 38,
-      title: "Manis, Luxury 3 Bedroom Heart of Downtown",
+      title: "accusantium voluptatum dolorem illo",
       location: "Toronto",
       rating: 5,
       type: "Glamping",
@@ -672,7 +672,7 @@ const DestinationModel = {
     },
     {
       id: 39,
-      title: "Manis, Luxury 3 Bedroom Heart of Downtown",
+      title: "dolor sit amet consectetur adipisicing",
       location: "Toronto",
       rating: 5,
       type: "Glamping",
@@ -699,7 +699,7 @@ const DestinationModel = {
     },
     {
       id: 40,
-      title: "Manis, Luxury 3 Bedroom Heart of Downtown",
+      title: "nostrum nulla eaque maxime dolore, ea accusantium",
       location: "Toronto",
       rating: 5,
       type: "Glamping",
