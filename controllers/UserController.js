@@ -4,7 +4,7 @@ const { check, validationResult } = require("express-validator");
 const UserModel = require("../models/UserModel.js");
 const jwt = require("jsonwebtoken");
 const expressJwt = require("express-jwt");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 router.post("/login", (req, res) => {
   const { email, password } = req.body;
