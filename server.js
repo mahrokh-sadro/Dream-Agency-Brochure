@@ -5,9 +5,9 @@ const clientSessions = require("client-sessions");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
-if (process.env.NODE_ENV != "production") {
-  require("dotenv").config({ path: "config/key.env" });
-}
+// if (process.env.NODE_ENV != "production") {
+//   require("dotenv").config({ path: "config/key.env" });
+// }
 
 const generalController = require("./controllers/GeneralController");
 const destinationController = require("./controllers/DestinationController");
@@ -36,7 +36,7 @@ app.use((req, res, next) => {
 
 app.use("/", generalController);
 app.use("/destination", destinationController);
-const HTTP_PORT = process.env.PORT || 3000;
+const HTTP_PORT = 3000;
 
 app.listen(HTTP_PORT, () => {
   console.log(
