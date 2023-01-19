@@ -1,12 +1,9 @@
 const express = require("express");
 const router = express.Router();
-
-const authMiddleware = require("../middleware/authentication.js");
 const DestinationModel = require("../models/DestinationModel.js");
 const InspModel = require("../models/InspModel.js");
 
 router.get("/listing/:id", (req, res) => {
-  //fetch the id from the url use the req obj
   const id = parseInt(req.params.id);
   const destination = DestinationModel.getADestination(id);
   res.render("destinationDetails", {
@@ -53,7 +50,6 @@ router.get("/location/:loc", (req, res) => {
 
 router.get("/explore/:id", (req, res) => {
   const id = req.params.id;
-  // console.log(id);
   const pic = id + "+.jpg";
   const pic1 = id + "++.jpg";
   console.log(pic);
