@@ -1,13 +1,13 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-const clientSessions = require("client-sessions");
+// const clientSessions = require("client-sessions");
 
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
-// if (process.env.NODE_ENV != "production") {
-//   require("dotenv").config({ path: "config/key.env" });
-// }
+if (process.env.NODE_ENV != "production") {
+  require("dotenv").config({ path: "config/key.env" });
+}
 
 const generalController = require("./controllers/GeneralController");
 const destinationController = require("./controllers/DestinationController");
@@ -17,14 +17,15 @@ app.engine(".hbs", exphbs({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
 app.use(express.static("public"));
 
-app.use(
-  clientSessions({
-    cookieName: "session",
-    secret: "week10example_web322",
-    duration: 2 * 60 * 1000,
-    activeDuration: 1000 * 60,
-  })
-);
+// app
+//   .use
+//   // clientSessions({
+//   //   cookieName: "session",
+//   //   secret: "week10example_web322",
+//   //   duration: 2 * 60 * 1000,
+//   //   activeDuration: 1000 * 60,
+//   // })
+//   ();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
